@@ -9,7 +9,7 @@ setwd("")
 # [1] IMPORT TEXTS
 
 # 1.1 read in hypertext: Kipling, Rudyard - Complete 317000 tokens)
-hyper_input <- readLines("../texte/1_The_Pickwick_Papers.txt.txt")
+hyper_input <- readLines("../texte/1_The_Pickwick_Papers.txt")
 hypertext <- toString(hyper_input) 
   #hypertext
 
