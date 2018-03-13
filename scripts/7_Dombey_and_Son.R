@@ -9,7 +9,7 @@ setwd("")
 # [1] IMPORT TEXTS
 
 # 1.1 read in hypertext: Kipling, Rudyard - Complete 317000 tokens)
-hyper_input <- readLines("../texte/1_The Pickwick Papers.txt")
+hyper_input <- readLines("../texte/7_Dombey_and_Son.txt")
 hypertext <- toString(hyper_input) 
   #hypertext
 
@@ -112,7 +112,7 @@ while(count < length(hypotext_ngrams)) {
               play <- "unknown"}
             
           m = data.frame(play, count, result$score, token, result$a_edits, result$b_edits)
-          write.table(m, file="../csv/1_The Pickwick Papers.txt.csv", 
+          write.table(m, file="../csv/7_Dombey_and_Son.csv", 
                       append=TRUE, col.names = FALSE, sep = ',')
         }
       } 
